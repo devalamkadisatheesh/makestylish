@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make a Stylish</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Make a Stylish</h1>
+    </header>
+    <nav>
+      <a href="#" id="homeLink">Home</a>
+      <a href="#">Men's Wear</a>
+      <a href="#">Women's Wear</a>
+    </nav>
+    <div id="mainContent">
+      <aside id="filters">
+        <h3>Filters</h3>
+        <div id="categoryContainer">
+          <label>Categories:</label>
+        </div>
+        <div>
+          <label for="priceRange"><b>Price Range:</b></label>
+          <input type="range" id="priceRange" min="0" max="1000" step="10" />
+          <span id="priceValue">$530</span>
+        </div>
+      </aside>
+      <main>
+        <div id="topBar">
+          <input type="text" id="search" placeholder="Search products..." />
+          <select id="sortPrice">
+            <option value="">Sort By Price</option>
+            <option value="lowToHigh">Low to High</option>
+            <option value="highToLow">High to Low</option>
+          </select>
+        </div>
+        <div id="loadingSpinner" class="hidden">Loading...</div>
+        <div id="errorMessage" class="hidden">Error fetching data. Please try again later.</div>
+        <section id="productsContainer"></section>
+        <button id="loadMore" style="display: none">Load More</button>
+      </main>
+    </div>
+    <script src="jscode.js"></script>
+  </body>
+</html>

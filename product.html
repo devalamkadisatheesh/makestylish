@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details</title>
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Product Details</h1>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">View Cart</a>
+    </nav>
+
+    <div class="container">
+      <div id="loadingSpinner" class="hidden">Loading...</div>
+      <div id="errorMessage" class="hidden">Error fetching product details.</div>
+      <div id="productDetails"></div>
+      <div id="container1">
+        <div id="productDetail"></div>
+        <button class="like-button" id="like-button">
+          ❤️ Like (<span id="like-count">0</span>)
+        </button>
+        <div class="reviews-container">
+          <h2>Reviews</h2>
+          <form class="review-form" id="review-form">
+            <textarea id="review-input" placeholder="Write your review here..."></textarea>
+            <button type="submit">Submit Review</button>
+          </form>
+          <div id="reviews-list">
+            <!-- Reviews will appear here -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="jscode1.js"></script>
+  </body>
+</html>
